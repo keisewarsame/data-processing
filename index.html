@@ -1,35 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Title Goes Here</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/nav.css" />
- </head>
- <body>
-     <header>
-     <h1>Your Name Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
-
-       <h2 class="subheader">Title Goes Here</h2>
-        <p>Content Goes Here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
-    </footer>
-  </main>
-  <script src="js/main.js"> </script>     
- </body>
+    <head>
+        <title>Form Template</title>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/forms.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Form Template</h1>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="#" target="_blank">Name of project goes here</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </header>
+        
+        <main class="wrapper">
+            <form method="get" action="" class="main-form">
+                <div>
+                    <label for="FirstName">First Name</label>: <br /> 
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required"  autofocus />
+                </div>
+                <div>
+                    <label for="LastName">Last Name</label>: <br /> 
+                    <input type="text" name="LastName" id="LastName" placeholder="Last Name" required="required"  />
+                </div>
+                <div>
+                    <label for="Email">Email</label>: <br /> 
+                    <input type="email" name="Email" id="Email" placeholder="Email" required="required"  />
+                </div>
+                <div>
+                    <label for="Address">Address</label>: <br /> 
+                    <input type="text" name="Address" id="Address" placeholder="Address" required="required"  />
+                </div>
+                <div>
+                    <label for="State">State</label>: <br /> 
+                    <select name="State" id="State" required="required">
+                        <option value="">Please Select State</option>
+                        <option value="AK">Alaska</option>
+                        <option value="CA">California</option>
+                        <option value="OR">Oregon</option>
+                        <option value="WA">Washington</option>
+                    </select>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Would you like to join our mailing list?</legend>
+                        <label><input type="radio" name="JoinMailingList" value="Yes" required="required"/> Yes</label><br />
+                        <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Interested in?</legend>
+                        <label><input type="checkbox" name="InterestedIn" value="Website" /> Website</label><br />
+                        <label><input type="checkbox" name="InterestedIn" value="OnlineCalender" /> Online Calender</label><br />
+                        <label><input type="checkbox" name="InterestedIn" value="ContactForm" /> Contact Form</label><br />
+                        <label><input type="checkbox" name="InterestedIn" value="Lollipops" /> Complimentary Lollipops</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="Comments">Comments</label>: <br /> 
+                    <textarea name="Comments" id="Comments" cols="36" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit it!"/>
+                </div>
+            </form>
+            <footer>
+                <p><small>&copy; 2021 by 
+                YOUR NAME HERE, All Rights Reserved ~ 
+                <a id="html-checker" href="#">Check HTML</a> ~ 
+                <a id="css-checker" href="#">Check CSS</a></small>
+                </p>
+            </footer>
+        </main>
+        <script src="js/main.js"> </script>     
+    </body>
 </html>
