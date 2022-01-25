@@ -20,3 +20,8 @@ div.pic img{
     top:10px;
     max-width:75px;
 }
+
+strong {
+    margin-left: 18.5%;
+    word-wrap: break-word;
+}
