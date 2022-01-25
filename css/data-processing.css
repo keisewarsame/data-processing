@@ -1,0 +1,22 @@
+#widgets {
+    max-width:600px;
+    margin:5px;
+    padding:2px;
+}
+#widgets > div {
+    padding:5px;
+    min-height:80px;
+    margin-bottom:5px;
+    border:1px solid #ccc;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position:relative; /* required to place #pic to right */
+}
+
+div.pic img{
+    position:absolute;
+    right:10px;
+    top:10px;
+    max-width:75px;
+}
